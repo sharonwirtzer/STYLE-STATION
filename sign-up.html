@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="img/pole.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sign Up</title>
+  </head>
+  <body class="inBody">
+    <header>
+      <a href="index.php">
+        <h1>STYLE STATION</h1>
+        <h2>ברוכים הבאים לסביבת העבודה של המחר</h2>
+      </a>
+
+    </header>
+    <h2>Sign Up</h2>
+    <form action="sign-up.php" method="post">
+      <div class="form-field">
+        <label for="full-name">Full Name</label>
+        <input
+          type="text"
+          class="text-field"
+          name="full-name"
+          id="full-name"
+          required
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="text-field"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="text-field"
+          name="password"
+          id="password"
+          required
+        />
+      </div>
+      <div class="button-container">
+        <input type="submit" class="button form-button" value="Sign Up" />
+      </div>
+    </form>
+    <div>
+      <p>
+        Already Have An Account? Click
+        <a href="index.php" class="link">Here</a> To Login.
+      </p>
+    </div>
+    <script src="validations.js"></script>
+  </body>
+</html>
