@@ -9,7 +9,7 @@ include 'php/connection.php';
 $id = $_REQUEST['id'];
 
 $sql = "DELETE FROM orders WHERE id = '$id'";
-$con->query($sql);
+$conn->query($sql);
 
 // Redirect User To The Home Page
 

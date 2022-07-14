@@ -18,7 +18,7 @@ $sql = "INSERT INTO orders (location, occupation, date, time, idcard)
         VALUES ('$location', '$occupation', '$date', '$time', '$idcard')";
         
 
-$con->query($sql);
+$conn->query($sql);
 
 // Redirect User To The Homepage
 

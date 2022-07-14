@@ -7,7 +7,7 @@ function render_orders() {
     include 'php/connection.php';
 
     $sql = 'SELECT id, location, occupation, date, time, idcard FROM orders';
-    $orders = $con->query($sql);
+    $orders = $conn->query($sql);
 
     $html = '';
 

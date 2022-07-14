@@ -9,7 +9,7 @@ include 'php/connection.php';
 $id = $_REQUEST['id'];
 
 $sql = "SELECT * FROM orders WHERE id = '$id'";
-$orders = $con->query($sql)->fetch_object();
+$orders = $conn->query($sql)->fetch_object();
 
 ?>
 <?php

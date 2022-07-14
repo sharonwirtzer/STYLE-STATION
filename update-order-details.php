@@ -22,7 +22,7 @@ $sql = "UPDATE orders
         SET location = '$location', occupation = '$occupation',date = '$date', time = '$time', idcard = '$idcard'
         WHERE id = '$id'";
 
-$con->query($sql);
+$conn->query($sql);
 
 // Redirect User To The Home Page
 
