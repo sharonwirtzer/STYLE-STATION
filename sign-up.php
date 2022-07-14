@@ -22,7 +22,7 @@
     // Check That User Email Doesn't Exist Already
 
     $select_stmt = "SELECT * FROM Users WHERE Email = '$email'";
-    $user_details = $con->query($select_stmt);
+    $user_details = $conn->query($select_stmt);
 
     if ($user_details->num_rows > 0) {
 
@@ -37,7 +37,7 @@
     $insert_stmt = "INSERT INTO Users (FirstName, LastName, Email, Password)
             VALUES ('$first_name', '$last_name', '$email', '$encrypted_password')";
 
-    $con->query($insert_stmt);
+    $conn->query($insert_stmt);
 
     // Redirect User To Login Page
     
