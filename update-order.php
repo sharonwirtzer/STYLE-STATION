@@ -101,11 +101,6 @@ if (isset($_SESSION['FirstName']))
 
   </div>
 
-
-
-
-
-
 </body>
 
 </html>
