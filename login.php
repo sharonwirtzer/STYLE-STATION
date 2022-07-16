@@ -17,11 +17,7 @@ $encrypted_password = md5($password);
 
 // Check If Such User Exists, With The Same Email & Password
 
-$user_id = $_SESSION['user_id'];
-
-$sql = "SELECT * FROM Movies WHERE user_id = '$user_id'";
-
-/* $sql = "SELECT * FROM Users WHERE Email = '$email' AND Password = '$encrypted_password'"; */
+$sql = "SELECT * FROM Users WHERE Email = '$email' AND Password = '$encrypted_password'";
 $user = $conn->query($sql);
 
 // Store User Name In A Session If User Exists & Should The App
