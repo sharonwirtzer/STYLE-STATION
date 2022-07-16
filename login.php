@@ -24,6 +24,7 @@ $user = $conn->query($sql);
 
 if ($user->num_rows == 1) {
 
+    $_SESSION['user_id'] = $user->fetch_object()->user_id;
     $_SESSION['FirstName'] = $user->fetch_object()->FirstName;
     header('Location: add-order.php');
     exit();
