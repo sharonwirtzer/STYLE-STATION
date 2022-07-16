@@ -17,6 +17,10 @@ $encrypted_password = md5($password);
 
 // Check If Such User Exists, With The Same Email & Password
 
+$user_id = $_SESSION['user_id'];
+
+$sql = "SELECT * FROM Movies WHERE user_id = '$user_id'";
+
 $sql = "SELECT * FROM Users WHERE Email = '$email' AND Password = '$encrypted_password'";
 $user = $conn->query($sql);
 
@@ -24,7 +28,6 @@ $user = $conn->query($sql);
 
 if ($user->num_rows == 1) {
 
-    $_SESSION['user_id'] = $user->fetch_object()->user_id;
     $_SESSION['FirstName'] = $user->fetch_object()->FirstName;
     header('Location: add-order.php');
     exit();
