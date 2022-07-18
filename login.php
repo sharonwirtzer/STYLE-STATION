@@ -27,7 +27,7 @@ if ($user->num_rows == 1) {
     $user_details = $user->fetch_object();
 
     $_SESSION['user'] = $user_details->FirstName;
-    $_SESSION['user_id'] = $user_details->ID;
+    $_SESSION['user_id'] = $user_details->id;
     header('Location: add-order.php');
     exit();
 
