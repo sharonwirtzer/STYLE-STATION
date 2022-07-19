@@ -25,8 +25,8 @@ session_start();
 
 $first_name = '';
 
-if (isset($_SESSION['FirstName']))
-  $first_name = $_SESSION['FirstName'];
+if (isset($_SESSION['user']))
+  $first_name = $_SESSION['user'];
 
 ?>
 
@@ -52,7 +52,7 @@ if (isset($_SESSION['FirstName']))
     <li id="bar"><a href="about.html">About</a></li>
     <li id="bar" style="float: right; "><a href="add-order.php">My Orders</a></li>
     <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="update-order.php"><img src="img/pole.png" width="15px">STYLE STATION</a></li>
-    <?php if (isset($_SESSION['FirstName']))
+    <?php if (isset($_SESSION['user']))
       echo "<p>Hello, $first_name | <a href='log-out.php' class='log-out'>Log Out</a></p>"; ?>
   </ul>
 
