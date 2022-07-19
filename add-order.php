@@ -11,7 +11,7 @@ session_start();
 $first_name = '';
 
 if (isset($_SESSION['user']))
-echo json_encode($_SESSION);
+    $first_name = $_SESSION['user'];
 
 ?>
 
