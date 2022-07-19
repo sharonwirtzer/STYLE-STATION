@@ -10,8 +10,8 @@ session_start();
 
 $first_name = '';
 
-if (isset($_SESSION['FirstName']))
-    $first_name = $_SESSION['FirstName'];
+if (isset($_SESSION['user']))
+    $first_name = $_SESSION['user'];
 
 ?>
 
@@ -128,70 +128,5 @@ if (isset($_SESSION['FirstName']))
   <h3 class="h3Footer">all rights reserved 2022</h3>
 
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <header>
-        <a href="index.php">
-            <h1>Blockbuster</h1>
-        </a>
-
-        <hr>
-    </header>
-    <main>
-        <section>
-            <h2>Add New Movie</h2>
-
-            <form action="process-form.php" method="post">
-                <div class="form-field">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="text-field" required 
-                    >
-                </div>
-                <div class="form-field">
-                    <label for="name">user</label>
-                    <input type="text" name="user" id="user" class="text-field" required 
-                    >
-                </div>
-                <div class="form-field">
-                    <label for="director">Director</label>
-                    <input type="text" name="director" id="director" class="text-field" required
-                    >
-                </div>
-                <div class="form-field">
-                    <label for="genre">Genre</label>
-                    <input type="text" name="genre" id="genre" class="text-field" required
-                    >
-                </div>
-                <div class="form-field">
-                    <label for="year">Year</label>
-                    <input type="text" name="year" id="year" class="text-field" required
-                    >
-                </div>
-                <div class="button-container">
-                    <input class="button form-button" type="submit" value="Create New Movie">
-                </div>
-            </form>
-
-
-
-            
-        </section>
-
-    </main> -->
-
 
 </html>
