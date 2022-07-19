@@ -29,8 +29,7 @@ if ($user->num_rows == 1) {
 
     $_SESSION['user'] = $user_details->FirstName;
     $_SESSION['user_id'] = $user_details->id;
-    header('Location: add-order.php');
-    exit();
+  
 
 }
     
