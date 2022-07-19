@@ -26,11 +26,6 @@ function render_orders()
         return;
     }
 
-
-
-
-
-
     while ($row = $orders->fetch_object()) {
 
         $html = $html . '<tr>';
@@ -40,7 +35,7 @@ function render_orders()
         $html = $html . '<td>' . $row->time . '</td>';
         $html = $html . '<td>' . $row->idcard . '</td>';
         $html = $html . '<td>';
-        $html = $html . '<a href="update-order.php?id=' . $row->id . '" class="movie-name">';
+        $html = $html . '<a href="update-order.php?id=' . $row->id . '" class="">';
         $html = $html . $row->id;
         $html = $html . '</a>';
         $html = $html . '</td>';

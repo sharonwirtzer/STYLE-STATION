@@ -11,48 +11,45 @@ session_start();
 $first_name = '';
 
 if (isset($_SESSION['user']))
-    $first_name = $_SESSION['user'];
+  $first_name = $_SESSION['user'];
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html dir="rtl">
 
 <head>
-    <link rel="icon" type="image/png" href="img/pole.png" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/details.css">
-    <title>client</title>
+  <link rel="icon" type="image/png" href="img/pole.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/details.css">
+  <title>client</title>
 
 </head>
 
 <body>
-<ul class="nBar">
-        <li id="bar"><a href="about.html">About</a></li>
-        <li id="bar" style="float: right; "><a href="add-order.php">My Orders</a></li>
-        <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="add-order.php">STYLE STATION<img src="img/pole.png" width="15px"></a></li>
-        <?php if (isset($_SESSION['user']))
-            echo "<p>Hello, $first_name | <a href='log-out.php' class='log-out'>Log Out</a></p>"; ?>
-    </ul>
+  <ul class="nBar">
+    <li id="bar"><a href="about.html">About</a></li>
+    <li id="bar" style="float: right; "><a href="add-order.php">New Order</a></li>
+    <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="add-order.php">STYLE STATION<img src="img/pole.png" width="15px"></a></li>
+    <?php if (isset($_SESSION['user']))
+      echo "<p>Hello, $first_name | <a href='log-out.php' class='log-out'>Log Out</a></p>"; ?>
+  </ul>
 
-    <div class="galery">
-        <img src="img/6.jpeg" style="border-top-right-radius:   10px;">
-        <img src="img/shutterstock_716104408-768x512.jpeg">
-        <img src="img/9.jpeg" style="border-bottom-right-radius:  10px;">
-      </div>
-
+  <div class="galery">
+    <img src="img/6.jpeg" style="border-top-right-radius:   10px;">
+    <img src="img/shutterstock_716104408-768x512.jpeg">
+    <img src="img/9.jpeg" style="border-bottom-right-radius:  10px;">
+  </div>
 
   <div class="formContainer">
 
-  <form action="process-form.php" method="post">
+    <form action="process-form.php" method="post">
       <h2>הזמנה חדשה</h2>
       <div class="elem-group">
-        <select  name="location" id="location" required>
+        <select name="location" id="location" required>
           <option value="בחר מקום">בחר מקום</option>
           <option value="תל אביב">תל אביב</option>
           <option value="רמת גן">רמת גן</option>
@@ -67,8 +64,8 @@ if (isset($_SESSION['user']))
         </select>
       </div>
       <div>
-        <input type="date" name="date" id="date"  required>
-        <input type="time" name="time" id="time"  required>
+        <input type="date" name="date" id="date" required>
+        <input type="time" name="time" id="time" required>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
       <div class="elem-group">
@@ -116,7 +113,7 @@ if (isset($_SESSION['user']))
         <img src="img/no-smoking.png" class="icons">העישון אסור<br><br>
         <img src="img/clock.png" class="icons">שעות עבודה מ - 09:00 עד 22:00
     </div>
-    </div>
+  </div>
   </div>
 
 </body>

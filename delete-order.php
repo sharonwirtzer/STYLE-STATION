@@ -4,7 +4,7 @@
 
 include 'php/connection.php';
 
-// Delete Movie
+// Delete Order
 
 $id = $_REQUEST['id'];
 
@@ -14,5 +14,3 @@ $conn->query($sql);
 // Redirect User To The Home Page
 
 header('Location: details.php');
-
-?>

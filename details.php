@@ -75,6 +75,4 @@ if (isset($_SESSION['user']))
 
 </footer>
 
-
-
 </html>

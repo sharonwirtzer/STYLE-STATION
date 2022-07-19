@@ -9,7 +9,7 @@ include 'php/connection.php';
 
 session_start();
 
-// Get Movie Details From The Form
+// Get Order Details From The Form
 
 $location = $_POST['location'];
 $occupation = $_POST['occupation'];
@@ -19,7 +19,7 @@ $idcard = $_POST['idcard'];
 
 $user_id = $_SESSION['user_id'];
 
-// Insert Movie Details Into The Database
+// Insert Order Details Into The Database
 
 $sql = "INSERT INTO orders (user_id, location, occupation, date, time, idcard) 
         VALUES ('$user_id', '$location', '$occupation', '$date', '$time', '$idcard')";
@@ -30,5 +30,3 @@ $conn->query($sql);
 // Redirect User To The Homepage
 
 header('Location: details.php');
-
-?>

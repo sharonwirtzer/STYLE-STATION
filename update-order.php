@@ -4,7 +4,7 @@
 
 include 'php/connection.php';
 
-// Get Movie Details
+// Get Order Details
 
 $id = $_REQUEST['id'];
 
@@ -41,7 +41,7 @@ if (isset($_SESSION['user']))
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/details.css">
+  <link rel="stylesheet" href="css/details.css">
   <title>client</title>
 
 </head>
@@ -66,7 +66,7 @@ if (isset($_SESSION['user']))
   <div class="formContainer">
 
     <form action="update-order-details.php" method="post">
-    <input type="hidden" name="id" value="<?php echo $orders->id ?>">
+      <input type="hidden" name="id" value="<?php echo $orders->id ?>">
       <div class="elem-group">
         <select name="location" id="location" required>
           <option value="בחר מקום">בחר מקום</option>
@@ -89,10 +89,10 @@ if (isset($_SESSION['user']))
       <input type="text" value="<?php echo $orders->idcard ?>" name="idcard" id="idcard" readonly required>
       <div class="elem-group">
       </div>
-      <div >
+      <div>
         <input type="submit" value="Update order">
       </div>
-      <div >
+      <div>
         <a href="delete-order.php?id=<?php echo $id ?>" id="delete-link-button">
           <input type="button" value="Delete order">
         </a>

@@ -4,7 +4,7 @@
 
 include 'php/connection.php';
 
-// Get Movie ID
+// Get Order ID
 
 $id = $_POST['id'];
 
@@ -16,7 +16,7 @@ $date = $_POST['date'];
 $time = $_POST['time'];
 $idcard = $_POST['idcard'];
 
-// Update Movie Details
+// Update Order Details
 
 $sql = "UPDATE orders 
         SET location = '$location', occupation = '$occupation',date = '$date', time = '$time', idcard = '$idcard'
@@ -27,5 +27,3 @@ $conn->query($sql);
 // Redirect User To The Home Page
 
 header('Location: details.php');
-
-?>

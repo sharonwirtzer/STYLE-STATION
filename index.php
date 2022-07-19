@@ -16,7 +16,7 @@
             <h1>STYLE STATION</h1>
             <h2>ברוכים הבאים לסביבת העבודה של המחר</h2>
         </a>
-       
+
     </header>
     <h2>Login</h2>
     <form action="login.php" method="post">
