@@ -18,7 +18,7 @@ $encrypted_password = md5($password);
 
 // Check If Such User Exists, With The Same Email & Password
 
-$sql = "SELECT * FROM Users WHERE Email = '$email' AND Password = '$encrypted_password'";
+$sql = "SELECT * FROM users WHERE Email = '$email' AND Password = '$encrypted_password'";
 $user = $conn->query($sql);
 
 // Store User Name In A Session If User Exists & Should The App
