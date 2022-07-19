@@ -10,8 +10,8 @@ session_start();
 
 $first_name = '';
 
-if (isset($_SESSION['user_id']))
-    $first_name = $_SESSION['user_id'];
+if (isset($_SESSION['user']))
+echo json_encode($_SESSION);
 
 ?>
 
