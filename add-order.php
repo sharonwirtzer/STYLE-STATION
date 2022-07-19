@@ -36,7 +36,7 @@ if (isset($_SESSION['user']))
         <li id="bar"><a href="about.html">About</a></li>
         <li id="bar" style="float: right; "><a href="add-order.php">My Orders</a></li>
         <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="add-order.php">STYLE STATION<img src="img/pole.png" width="15px"></a></li>
-        <?php if (isset($_SESSION['FirstName']))
+        <?php if (isset($_SESSION['user']))
             echo "<p>Hello, $first_name | <a href='log-out.php' class='log-out'>Log Out</a></p>"; ?>
     </ul>
 
@@ -128,5 +128,6 @@ if (isset($_SESSION['user']))
   <h3 class="h3Footer">all rights reserved 2022</h3>
 
 </footer>
+
 
 </html>
