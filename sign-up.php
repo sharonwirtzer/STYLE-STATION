@@ -4,6 +4,10 @@
 
     include 'php/connection.php';
 
+    // Use Sessions
+
+session_start();
+
     // Get Data From Form
 
     $full_name = explode(" ", $_POST["full-name"]);
