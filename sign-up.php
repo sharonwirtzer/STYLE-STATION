@@ -1,49 +1,48 @@
 <?php
 
-// Connect To The Database
+    // Connect To The Database
 
-include 'php/connection.php';
+    include 'php/connection.php';
 
+    // Get Data From Form
 
-// Get Data From Form
+    $full_name = explode(" ", $_POST["full-name"]);
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-$full_name = explode(" ", $_POST["full-name"]);
-$email = $_POST["email"];
-$password = $_POST["password"];
+    // Split Full Name Into First & Last Name
 
-// Split Full Name Into First & Last Name
+    $first_name = $full_name[0];
+    $last_name = $full_name[1];
 
-$first_name = $full_name[0];
-$last_name = $full_name[1];
+    // Encrypt Password
 
+    $encrypted_password = md5($password);
 
+    // Check That User Email Doesn't Exist Already
 
-// Encrypt Password
+    $select_stmt = "SELECT * FROM Users WHERE Email = '$email'";
+    $user_details = $conn->query($select_stmt);
 
-$encrypted_password = md5($password);
+    if ($user_details->num_rows > 0) {
 
-// Check That User Email Doesn't Exist Already
+        header('Location: error.php');
+        exit();
+        
+    }
 
-$select_stmt = "SELECT * FROM users WHERE Email = '$email'";
-$user_details = $conn->query($select_stmt);
+    // Run A SQL Command Against The Database
+    // Insert User Details
 
-if ($user_details->num_rows > 0) {
-
-    header('Location: error.php');
-    exit();
-}
-
-// Run A SQL Command Against The Database
-// Insert User Details
-
-$insert_stmt = "INSERT INTO users (FirstName, LastName, Email, Password)
+    $insert_stmt = "INSERT INTO Users (FirstName, LastName, Email, Password)
             VALUES ('$first_name', '$last_name', '$email', '$encrypted_password')";
 
-$conn->query($insert_stmt);
+    $conn->query($insert_stmt);
 
-// Redirect User To Login Page
+    // Redirect User To Login Page
+    
+    $url = 'add-order.php';
+    header('Location: ' . $url);
+    exit();
 
-
-$url = 'login.php';
-header('Location: ' . $url);
-exit();
+?>
