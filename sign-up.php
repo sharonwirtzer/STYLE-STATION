@@ -34,8 +34,8 @@
     // Run A SQL Command Against The Database
     // Insert User Details
 
-/*     $insert_stmt = "INSERT INTO users (FirstName, LastName, Email, Password)
-            VALUES ('$first_name', '$last_name', '$email', '$encrypted_password')"; */
+    $insert_stmt = "INSERT INTO users (FirstName, LastName, Email, Password)
+            VALUES ('$first_name', '$last_name', '$email', '$encrypted_password')";
 
     $conn->query($insert_stmt);
 
