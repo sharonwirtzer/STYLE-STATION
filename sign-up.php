@@ -4,6 +4,10 @@
 
 include 'php/connection.php';
 
+// Use Sessions
+
+session_start();
+
 // Get Data From Form
 
 $full_name = explode(" ", $_POST["full-name"]);
@@ -40,6 +44,17 @@ $conn->query($insert_stmt);
 
 // Redirect User To Login Page
 
-$url = 'add-order.php';
-header('Location: ' . $url);
-exit();
+if ($user->num_rows == 1) {
+
+    $user_details = $user->fetch_object();
+
+    $_SESSION['user'] = $user_details->FirstName;
+    $_SESSION['user_id'] = $user_details->id;
+    header('Location: add-order.php');
+    exit();
+} else {
+
+    header('Location: error.php');
+    exit();
+}
+
