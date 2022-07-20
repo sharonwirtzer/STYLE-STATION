@@ -4,9 +4,6 @@
 
     include 'php/connection.php';
 
-    // Use Sessions
-
-session_start();
 
     // Get Data From Form
 
@@ -45,21 +42,8 @@ session_start();
 
     // Redirect User To Login Page
 
-
-
-    if ($user_details->num_rows == 1) {
-
-        $_SESSION['user'] = $user_details->fetch_object()->FirstName;
-        header('Location: add-order.php');
-        exit();
     
-    }
-
-
-
-    
-    $url = 'add-order.php';
-    header('Location: ' . $url);
+    header('Location: login.php');
     exit();
 
 ?>
