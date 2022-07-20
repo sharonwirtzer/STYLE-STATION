@@ -28,12 +28,12 @@ session_start();
     $select_stmt = "SELECT * FROM users WHERE Email = '$email'";
     $user_detail = $conn->query($select_stmt);
 
-    if ($user_detail->num_rows > 0) {
+/*     if ($user_detail->num_rows > 0) {
 
         header('Location: error.php');
         exit();
         
-    }
+    } */
 
     if ($user_detail->num_rows == 1) {
 
