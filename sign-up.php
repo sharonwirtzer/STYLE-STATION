@@ -48,8 +48,6 @@ $conn->query($insert_stmt);
 
 
 
-if ($user_details->num_rows == 1) {
-
     $user = $user_details->fetch_object();
 
     $_SESSION['user'] = $user->FirstName;
@@ -57,7 +55,6 @@ if ($user_details->num_rows == 1) {
     header('Location: add-order.php');
     exit();
 
-}
 
 
 /* $url = 'add-order.php';
