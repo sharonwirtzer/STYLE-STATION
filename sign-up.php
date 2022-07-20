@@ -41,7 +41,7 @@
 
     // Redirect User To Login Page
     
-    $url = 'add-order.php';
+    $url = 'login.php';
     header('Location: ' . $url);
     exit();
 
