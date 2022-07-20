@@ -44,13 +44,19 @@ $conn->query($insert_stmt);
 
 // Redirect User To Login Page
 
+if ($user->num_rows == 1) {
 
-$user_details = $user->fetch_object();
+    $user_details = $user->fetch_object();
 
-$_SESSION['user'] = $user_details->FirstName;
-$_SESSION['user_id'] = $user_details->id;
-header('Location: add-order.php');
-exit();
+    $_SESSION['user'] = $user_details->FirstName;
+    $_SESSION['user_id'] = $user_details->id;
+    header('Location: add-order.php');
+    exit();
+} else {
+
+    header('Location: error.php');
+    exit();
+}
 
 /* 
 $url = 'add-order.php';
