@@ -24,6 +24,8 @@
     $select_stmt = "SELECT * FROM users WHERE Email = '$email'";
     $user_details = $conn->query($select_stmt);
 
+    echo "1";
+
     if ($user_details->num_rows > 0) {
 
         header('Location: error.php');
