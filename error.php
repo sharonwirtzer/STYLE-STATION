@@ -8,42 +8,28 @@
     <title>Document</title>
 </head>
 <body>
-<div class="box">
-  <div class="box__ghost">
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    
-    <div class="box__ghost-container">
-      <div class="box__ghost-eyes">
-        <div class="box__eye-left"></div>
-        <div class="box__eye-right"></div>
-      </div>
-      <div class="box__ghost-bottom">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div class="box__ghost-shadow"></div>
-  </div>
-  
-  <div class="box__description">
-    <div class="box__description-container">
-      <div class="box__description-title">Whoops!</div>
-      <div class="box__description-text">It seems like we couldn't find the page you were looking for</div>
-    </div>
-    
-    <a href="https://codepen.io/diogo_ml_gomes/" target="_blank" class="box__button">Go back</a>
-    
-  </div>
-  
-</div>
+<figure>
+	<div class="sad-mac"></div>
+	<figcaption>
+		<span class="sr-text">Error 404: Not Found</span>
+		<span class="e"></span>
+		<span class="r"></span>
+		<span class="r"></span>
+		<span class="o"></span>
+		<span class="r"></span>
+		<span class="_4"></span>
+		<span class="_0"></span>
+		<span class="_4"></span>
+		<span class="n"></span>
+		<span class="o"></span>
+		<span class="t"></span>
+		<span class="f"></span>
+		<span class="o"></span>
+		<span class="u"></span>
+		<span class="n"></span>
+		<span class="d"></span>
+	</figcaption>
+</figure>
 <script src="/error.js"></script>
 </body>
 </html>
