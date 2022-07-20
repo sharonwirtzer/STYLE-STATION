@@ -4,6 +4,10 @@
 
     include 'php/connection.php';
 
+    // Use Sessions
+
+session_start();
+
     // Get Data From Form
 
     $full_name = explode(" ", $_POST["full-name"]);
@@ -29,6 +33,14 @@
         header('Location: error.php');
         exit();
         
+    }
+
+    if ($user_detail->num_rows == 1) {
+
+        $_SESSION['user'] = $user->fetch_object()->FirstName;
+        header('Location: add-order.php');
+        exit();
+    
     }
 
     // Run A SQL Command Against The Database
