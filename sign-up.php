@@ -19,8 +19,6 @@ $password = $_POST["password"];
 $first_name = $full_name[0];
 $last_name = $full_name[1];
 
-
-
 // Encrypt Password
 
 $encrypted_password = md5($password);
@@ -36,7 +34,6 @@ if ($user_details->num_rows > 0) {
     exit();
 }
 
-
 // Run A SQL Command Against The Database
 // Insert User Details
 
@@ -45,23 +42,11 @@ $insert_stmt = "INSERT INTO users (FirstName, LastName, Email, Password)
 
 $conn->query($insert_stmt);
 
-
-
-
-    $user_details = $user->fetch_object();
-
-    $_SESSION['user'] = $user_details->FirstName;
-    $_SESSION['user_id'] = $user_details->id;
-    header('Location: add-order.php');
-    exit();
-
-
-
-
-
 // Redirect User To Login Page
 
-/* $url = 'add-order.php';
-header('Location: ' . $url);
+$user_details = $user->fetch_object();
+
+$_SESSION['user'] = $user_details->FirstName;
+$_SESSION['user_id'] = $user_details->id;
+header('Location: add-order.php');
 exit();
- */
