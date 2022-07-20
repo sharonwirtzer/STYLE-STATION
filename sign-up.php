@@ -20,8 +20,6 @@ $first_name = $full_name[0];
 $last_name = $full_name[1];
 
 
-$user_details = $user->fetch_object();
-$_SESSION['user'] = $user_details->FirstName;
 
 // Encrypt Password
 
@@ -37,6 +35,10 @@ if ($user_details->num_rows > 0) {
     header('Location: error.php');
     exit();
 }
+
+
+$_SESSION['user'] = $user_details->FirstName;
+
 
 // Run A SQL Command Against The Database
 // Insert User Details
