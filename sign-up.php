@@ -22,9 +22,9 @@
     // Check That User Email Doesn't Exist Already
 
     $select_stmt = "SELECT * FROM users WHERE Email = '$email'";
-    $user_details = $conn->query($select_stmt);
+    $user_detail = $conn->query($select_stmt);
 
-    if ($user_details->num_rows > 0) {
+    if ($user_detail->num_rows > 0) {
 
         header('Location: error.php');
         exit();
