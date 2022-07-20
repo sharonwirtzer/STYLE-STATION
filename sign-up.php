@@ -21,7 +21,7 @@
 
     // Check That User Email Doesn't Exist Already
 
-    $select_stmt = "SELECT * FROM Users WHERE Email = '$email'";
+    $select_stmt = "SELECT * FROM users WHERE Email = '$email'";
     $user_details = $conn->query($select_stmt);
 
     if ($user_details->num_rows > 0) {
@@ -34,7 +34,7 @@
     // Run A SQL Command Against The Database
     // Insert User Details
 
-    $insert_stmt = "INSERT INTO Users (FirstName, LastName, Email, Password)
+    $insert_stmt = "INSERT INTO users (FirstName, LastName, Email, Password)
             VALUES ('$first_name', '$last_name', '$email', '$encrypted_password')";
 
     $conn->query($insert_stmt);
