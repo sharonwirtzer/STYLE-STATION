@@ -37,7 +37,7 @@ session_start();
 
     if ($user_detail->num_rows == 1) {
 
-        $_SESSION['user'] = $user->fetch_object()->FirstName;
+        $_SESSION['user'] = $user_detail->fetch_object()->FirstName;
         header('Location: add-order.php');
         exit();
     
