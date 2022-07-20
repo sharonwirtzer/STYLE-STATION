@@ -4,9 +4,6 @@
 
 include 'php/connection.php';
 
-// Use Sessions
-
-session_start();
 
 // Get Data From Form
 
@@ -35,9 +32,6 @@ if ($user_details->num_rows > 0) {
     header('Location: error.php');
     exit();
 }
-
-
-$_SESSION['user'] = $user_details->FirstName;
 
 
 // Run A SQL Command Against The Database
