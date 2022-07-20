@@ -4,6 +4,10 @@
 
 include 'php/connection.php';
 
+// Use Sessions
+
+session_start();
+
 // Get Data From Form
 
 $full_name = explode(" ", $_POST["full-name"]);
@@ -22,9 +26,9 @@ $encrypted_password = md5($password);
 // Check That User Email Doesn't Exist Already
 
 $select_stmt = "SELECT * FROM users WHERE Email = '$email'";
-$user_details = $conn->query($select_stmt);
+$user = $conn->query($select_stmt);
 
-if ($user_details->num_rows > 0) {
+if ($user->num_rows > 0) {
 
     header('Location: error.php');
     exit();
@@ -40,12 +44,16 @@ $conn->query($insert_stmt);
 
 // Redirect User To Login Page
 
-// Use Sessions
 
-session_start();
+$user_details = $user->fetch_object();
 
 $_SESSION['user'] = $user_details->FirstName;
+$_SESSION['user_id'] = $user_details->id;
+header('Location: add-order.php');
+exit();
 
+/* 
 $url = 'add-order.php';
 header('Location: ' . $url);
 exit();
+ */
