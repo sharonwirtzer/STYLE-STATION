@@ -46,7 +46,7 @@ $insert_stmt = "INSERT INTO users (FirstName, LastName, Email, Password)
 $conn->query($insert_stmt);
 
 
-if ($user->num_rows == 1) {
+
 
     $user_details = $user->fetch_object();
 
@@ -54,11 +54,7 @@ if ($user->num_rows == 1) {
     $_SESSION['user_id'] = $user_details->id;
     header('Location: add-order.php');
     exit();
-} else {
 
-    header('Location: error.php');
-    exit();
-}
 
 
 
