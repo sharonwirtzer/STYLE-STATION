@@ -30,7 +30,7 @@
         header('Location: error.php');
         exit();
         
-    } else {
+    } 
 
     // Run A SQL Command Against The Database
     // Insert User Details
@@ -42,14 +42,8 @@
 
     // Redirect User To Login Page
 
-
-        header('Location: error.php');
-        exit();
     
-    }
-
-
-
-    
+    header('Location: index.php');
+    exit();
 
 ?>
