@@ -38,12 +38,9 @@ h3 {
   display: flex;
   margin: auto;
   border-radius: 50%;
-  opacity: 1;
+
 }
 
-img:hover {
-  opacity: 0.6;
-}
 
 .fa {
   padding: 5px;
@@ -161,6 +158,7 @@ li a {
   width: 100%;
   height: 600px;
   object-fit: cover;
+  opacity: 0.6;
 }
 
 footer {
