@@ -59,8 +59,8 @@ if (isset($_SESSION['user']))
                         <tbody>
                             <?php render_orders() ?>
                         </tbody>
-                        <p>לשינוי או ביטול ההזמנה לחץ על מספר ההזמנה</p>
                     </table>
+                    <p>לשינוי או ביטול ההזמנה לחץ על מספר ההזמנה</p>
                     <a href="add-order.php">
                         <input class="add_order" type="button" value="➕ New Order">
                     </a>
