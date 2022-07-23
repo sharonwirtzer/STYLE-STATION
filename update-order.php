@@ -64,6 +64,8 @@ if (isset($_SESSION['user']))
 
   <div class="formContainer">
 
+  <h4>עדכון הזמנה מספר <?php echo $orders->idcard ?></h4>
+
     <form action="update-order-details.php" method="post">
       <input type="hidden" name="id" value="<?php echo $orders->id ?>">
       <div class="elem-group">
