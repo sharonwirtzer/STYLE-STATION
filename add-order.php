@@ -104,6 +104,10 @@ if (isset($_SESSION['user']))
           <li> <img src="img/car.png" class="icons">חניה ללא תשלום </li><br>
           <li> <img src="img/paw.png" class="icons">מותר להכניס חיות מחמד </li><br>
           <li> <img src="img/tv.png" class="icons">טלוויזיה חכמה</li><br>
+<li>          <p>
+Some text with an image here <img style='display:inline;' src="img/tv.png"/>
+</p></li>
+
         </ul>
       </h4>
     </div>
