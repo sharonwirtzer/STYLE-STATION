@@ -89,7 +89,7 @@ if (isset($_SESSION['user']))
       <div class="elem-group">
       </div>
       <div>
-        <input type="submit" value="שלח">
+        <input type="submit" value="עדכן הזמנה">
       </div>
       <div>
         <a href="delete-order.php?id=<?php echo $id ?>" id="delete-link-button">
@@ -105,9 +105,7 @@ if (isset($_SESSION['user']))
       <h1>STYLE STATION <br> מרכז יופי, טיפוח וקוסמטיקה. </h1>
     </div>
     <div dir="rtl">
-      <h4>מה המקום מציע<br><br> STYLE STATION מציעה ללקוחותיה מגוון רחב של טיפולי יופי שכל אחד ואחד מהם הוא חוויה.
-        שירות ומקצועיות ברמות הגבוהות ביותר.<br>
-        אנו מזמינים אתכם לבוא ולהתנסות באחד הטיפולים שלנו - זאת לא תהיה הפעה האחרונה, בהתחייבות!</h4>
+      <h4>עדכון או ביטול הזמנה</h4>
     </div>
     <div dir="rtl">
       <h4>השירותים שלנו: <br><br> מיטב מעצבי השיער והקוסמטיקאיות.<br> נותני השירות הטובים ביותר נמצאים אצלינו והכול
@@ -115,28 +113,7 @@ if (isset($_SESSION['user']))
         <br> אצלנו תקבלו שירות ברמה הגבוהה ביותר ובסביבה הקרובה הנוחה אלייך.
       </h4>
     </div>
-    <div dir="rtl">
-      <h4>שירותים נוספים<br><br>
-        <ul class="iconList">
-          <li> <img src="img/wifi.png" class="icons">אינטרנט אלחוטי</li><br>
-          <li><img src="img/kitchen.png" class="icons">מטבחון </li><br>
-          <li> <img src="img/wash.png" class="icons">שירות כביסה </li><br>
-        </ul>
-        <ul class="iconList">
 
-          <li> <img src="img/car.png" class="icons">חניה ללא תשלום </li><br>
-          <li> <img src="img/paw.png" class="icons">מותר להכניס חיות מחמד </li><br>
-          <li> <img src="img/tv.png" class="icons">טלוויזיה חכמה</li><br>
-
-        </ul>
-      </h4>
-    </div>
-
-    <div dir="rtl">
-      <h4>דברים שחשוב לדעת<br><br>
-        <img src="img/no-smoking.png" class="icons">העישון אסור<br><br>
-        <img src="img/clock.png" class="icons">פתוח כל יום בין השעות 09:00 עד 22:00
-    </div>
   </div>
 
 
