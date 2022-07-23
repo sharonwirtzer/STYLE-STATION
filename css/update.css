@@ -428,3 +428,22 @@ footer {
   transition: all 0.3s ease;
 }
 
+
+
+.showName {
+  display: block;
+  color: rgb(113, 122, 172);
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  float: right;
+  font-size: 20px;
+}
+
+.detailsImg {
+  width: 50%;
+  float: left;
+  left: 0;
+  top: 0px;
+  margin-top: 20px;
+}
