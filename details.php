@@ -61,7 +61,7 @@ if (isset($_SESSION['user']))
                         </tbody>
                     </table>
                     <a href="add-order.php">
-                        <input class="button" type="button" value="Add New Order">
+                        <input class="add_order" type="button" value="➕ New Order">
                     </a>
                 </div>
             </section>

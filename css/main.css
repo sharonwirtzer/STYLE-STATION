@@ -128,11 +128,21 @@ a:visited {
 table {
   background-color: rgba(var(--d87, 255, 255, 255), 1);
   border-radius: 10px;
-  margin-left: auto;
+/*   margin-left: auto;
   margin-right: auto;
-  border-collapse: collapse;
+  border-collapse: collapse; */
   text-transform: uppercase;
   margin-bottom: 60px;
+}
+
+.add_order{
+  border-radius: 2px; 
+    font-family: "Assistant", sans-serif;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
 }
 
 table,
