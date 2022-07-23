@@ -198,10 +198,8 @@ li a {
 .formContainer {
     width: 50%;
     float: left;
-    position: sticky;
     left: 0;
     top: 0px;
-    margin-bottom: 500px;
 }
 
 form {
