@@ -112,7 +112,7 @@ if (isset($_SESSION['user']))
     <div dir="rtl">
       <h4>דברים שחשוב לדעת<br><br>
         <img src="img/no-smoking.png" class="icons">העישון אסור<br><br>
-        <img src="img/clock.png" class="icons">שעות עבודה מ - 09:00 עד 22:00
+        <img src="img/clock.png" class="icons">פתוח כל יום בין השעות 09:00 עד 22:00
     </div>
   </div>
   </div>
