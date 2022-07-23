@@ -66,7 +66,7 @@ if (isset($_SESSION['user']))
 
     <form action="update-order-details.php" method="post">
       <input type="hidden" name="id" value="<?php echo $orders->id ?>">
-      <h4>עדכון הזמנה מספר <?php echo $orders->id ?></h4>
+      <h2>עדכון הזמנה מספר <?php echo $orders->id ?></h2>
       <div class="elem-group">
         <select name="location" id="location" required>
           <option value="בחר מקום">בחר מקום</option>
@@ -119,5 +119,12 @@ if (isset($_SESSION['user']))
 
 
 </body>
+
+<footer>
+
+  <h1 class="h1Footer">STYLE STATION</h1>
+  <h3 class="h3Footer">all rights reserved 2022</h3>
+
+</footer>
 
 </html>
