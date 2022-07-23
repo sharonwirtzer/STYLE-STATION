@@ -33,7 +33,7 @@
         </div>
     </form>
     <div>
-        <p>Don't Have An Accoun Yet? Click <a href="sign-up.html" class="link">Here</a> To Sign Up.</p>
+        <p>Don't have an account yet? click <a href="sign-up.html" class="link">here</a> To sign up.</p>
     </div>
 </body>
 
