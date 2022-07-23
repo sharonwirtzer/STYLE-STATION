@@ -30,6 +30,7 @@ if (isset($_SESSION['user']))
 <body>
     <ul class="nBar">
         <li id="bar"><a href="about.html">About</a></li>
+        <li id="bar" style="float: right"><a href="Dashboards.html">Dashboards</a></li>
         <li id="bar" style="float: right; "><a href="add-order.php">My Orders</a></li>
         <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="details.php"><img src="img/pole.png" width="15px">STYLE STATION</a></li>
         <?php if (isset($_SESSION['user']))
