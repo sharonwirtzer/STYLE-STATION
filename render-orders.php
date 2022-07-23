@@ -21,7 +21,7 @@ function render_orders()
 
     if ($orders->num_rows == 0) {
 
-        echo "<tr><td colspan='4' class='center'>- Currently There Are No orders To Display -</td></tr>";
+        echo "<tr><td colspan='4' class='center'>- אין הזמנות במערכת -</td></tr>";
 
         return;
     }

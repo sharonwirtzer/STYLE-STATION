@@ -484,3 +484,7 @@ input[type="radio"] {
   top: 0px;
   margin-top: 20px;
 }
+
+.center{
+  text-align: center;
+}
