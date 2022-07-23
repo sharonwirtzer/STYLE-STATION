@@ -64,10 +64,9 @@ if (isset($_SESSION['user']))
 
   <div class="formContainer">
 
-  <h4>עדכון הזמנה מספר <?php echo $orders->idcard ?></h4>
-
     <form action="update-order-details.php" method="post">
       <input type="hidden" name="id" value="<?php echo $orders->id ?>">
+      <h4>עדכון הזמנה מספר <?php echo $orders->id ?></h4>
       <div class="elem-group">
         <select name="location" id="location" required>
           <option value="בחר מקום">בחר מקום</option>
