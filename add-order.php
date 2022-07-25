@@ -65,7 +65,8 @@ if (isset($_SESSION['user']))
         </select>
       </div>
       <div>
-        <input date() type="date" name="date" id="date" required>
+        <input type="date" name="date" id="date" required>
+        <input id="date_picker" type="date">
         <input type="time" name="time" id="time" required>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
@@ -117,7 +118,7 @@ if (isset($_SESSION['user']))
     </div>
   </div>
   </div>
-  <input id="date_picker" type="date">
+
 </body>
 
 
