@@ -66,7 +66,7 @@ if (isset($_SESSION['user']))
       </div>
       <div>
         <input id="datefield" type='date' min='1899-01-01' max='2000-13-13' required>
-        <input type="time" name="time" id="time" required>
+        <input type="time" name="time" id="time" min="09:00" max="18:00" required>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
       <div class="elem-group">
@@ -135,8 +135,6 @@ if (isset($_SESSION['user']))
     today = yyyy + '-' + mm + '-' + dd;
     document.getElementById("datefield").setAttribute("min", today);
   </script>
-
-
 
 </body>
 
