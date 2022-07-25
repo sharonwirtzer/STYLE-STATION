@@ -119,6 +119,18 @@ if (isset($_SESSION['user']))
   </div>
   </div>
 
+  <script>
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0');
+  var yyyy = today.getFullYear();
+
+  today = yyyy + '-' + mm + '-' + dd;
+  $('#date_picker').attr('min', today);
+</script>
+
+
+
 </body>
 
 
@@ -128,18 +140,6 @@ if (isset($_SESSION['user']))
   <h3 class="h3Footer">all rights reserved 2022</h3>
 
 </footer>
-
-<script>
-
-var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0');
-        var yyyy = today.getFullYear();
-
-        today = yyyy + '-' + mm + '-' + dd;
-        $('#date_picker').attr('min',today);
-    </script>
-
 
 
 </html>
