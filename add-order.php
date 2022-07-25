@@ -66,9 +66,8 @@ if (isset($_SESSION['user']))
       </div>
       <div>
         <input id="datefield" type='date' min='1899-01-01' max='2000-13-13' required>
-        <input type="time" name="time" id="time"  step="5"
-            min="16:00"
-            max="22:00" required>
+        <input type="time" name="time" id="time"  step="5" required>
+        <input type='time'  step='3600'/>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
       <div class="elem-group">
