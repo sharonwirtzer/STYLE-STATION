@@ -117,7 +117,7 @@ if (isset($_SESSION['user']))
     </div>
   </div>
   </div>
-
+  <input id="date_picker" type="date">
 </body>
 
 
@@ -130,23 +130,14 @@ if (isset($_SESSION['user']))
 
 <script>
 
-function date(){
-    var dtToday = new Date();
-    
-    var month = dtToday.getMonth() + 1;
-    var day = dtToday.getDate();
-    var year = dtToday.getFullYear();
-    if(month < 10)
-        month = '0' + month.toString();
-    if(day < 10)
-        day = '0' + day.toString();
-    
-    var maxDate = year + '-' + month + '-' + day;
-    alert(maxDate);
-    $('#txtDate').attr('min', maxDate);
-};
+var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
 
-</script>
+        today = yyyy + '-' + mm + '-' + dd;
+        $('#date_picker').attr('min',today);
+    </script>
 
 
 
