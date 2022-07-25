@@ -69,6 +69,14 @@ if (isset($_SESSION['user']))
         <input type="time" name="time" id="time"  step="5"
             min="16:00"
             max="22:00" required>
+            <input type="time" 
+               id="gfg" 
+               name="Geek_time" 
+               placeholder="Enter time"
+               step="5" 
+               min="16:00" 
+               max="22:00"
+               disabled>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
       <div class="elem-group">
