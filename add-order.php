@@ -65,7 +65,7 @@ if (isset($_SESSION['user']))
         </select>
       </div>
       <div>
-        <input type="date" name="date" id="date" required>
+        <input date() type="date" name="date" id="date" required>
         <input type="time" name="time" id="time" required>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
@@ -127,6 +127,27 @@ if (isset($_SESSION['user']))
   <h3 class="h3Footer">all rights reserved 2022</h3>
 
 </footer>
+
+<script>
+
+function date(){
+    var dtToday = new Date();
+    
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var maxDate = year + '-' + month + '-' + day;
+    alert(maxDate);
+    $('#txtDate').attr('min', maxDate);
+};
+
+</script>
+
 
 
 </html>
