@@ -66,7 +66,7 @@ if (isset($_SESSION['user']))
       </div>
       <div>
         <input id="datefield" type='date' min='1899-01-01' max='2000-13-13' required>
-        <input type="time" name="time" id="time"   step="300"
+        <input type="time" name="time" id="time"   
             min="09:00"
             max="22:00" required>
         
