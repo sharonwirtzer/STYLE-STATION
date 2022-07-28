@@ -70,7 +70,7 @@ if (isset($_SESSION['user']))
         <input id="date" name="date" type='date' min='1899-01-01' max='2000-13-13' required>
         <input type="time" min="09:00" max="22:00" name="time" id="time" required>
 
-        <input type='tel' min="09:00" max="22:00" name='time_1' class='ios-time-picker' />
+        <input type="time" value="08:30:00" step="600">
 
 
       </div>
