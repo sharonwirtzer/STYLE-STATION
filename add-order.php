@@ -25,7 +25,6 @@ if (isset($_SESSION['user']))
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/details.css">
-  <link rel="stylesheet" href="css/ios.css">
   <title>client</title>
 
 </head>
@@ -68,7 +67,7 @@ if (isset($_SESSION['user']))
       </div>
       <div>
         <input id="date" name="date" type='date' min='1899-01-01' max='2000-13-13' required>
-        <input type="time" min="09:00" max="22:00" step="300" name="time" id="time" required>
+        <input type="time" min="09:00" max="22:00" value = "09:00" name="time" id="time" required>
 
 
       </div>
@@ -139,7 +138,6 @@ if (isset($_SESSION['user']))
     today = yyyy + '-' + mm + '-' + dd;
     document.getElementById("date").setAttribute("min", today);
   </script>
-   <script src="ios.js"></script>
 
 </body>
 

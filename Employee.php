@@ -34,7 +34,7 @@ if (isset($_SESSION['user']))
     <li id="bar" style="float: right"><a href="Dashboards.html">Dashboards</a></li>
     <li id="bar" style="float: right; "><a href="add-order.php">New Order</a></li>
     <li id="bar" style="float: right; "><a href="Employee.php">Employee</a></li>
-    <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="add-order.php">STYLE STATION<img src="img/pole.png" width="15px"></a></li>
+    <li id="bar" style="float: left; margin-right: 30px; font-size: 20px; "><a href="Employee.php">STYLE STATION<img src="img/pole.png" width="15px"></a></li>
     <?php if (isset($_SESSION['user']))
       echo "<p>Hello, $first_name | <a href='log-out.php' class='log-out'>Log Out</a></p>"; ?>
   </ul>
@@ -66,8 +66,8 @@ if (isset($_SESSION['user']))
         </select>
       </div>
       <div>
-        <input id="datefield" type='date' min='1899-01-01' max='2000-13-13' required>
-        <input type="time" min="16:00" max="22:00" name="time" id="time" required>
+      <input id="date" name="date" type='date' min='1899-01-01' max='2000-13-13' required>
+        <input type="time" min="09:00" max="22:00" value = "09:00" name="time" id="time" required>
       </div>
       <input type="text" placeholder="הכנס תעודת זהות" name="idcard" id="idcard" required>
       <div class="elem-group">
