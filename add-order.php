@@ -134,7 +134,7 @@ if (isset($_SESSION['user']))
     }
 
     today = yyyy + '-' + mm + '-' + dd;
-    document.getElementById("datefield").setAttribute("min", today);
+    document.getElementById("date").setAttribute("min", today);
   </script>
 
 </body>
