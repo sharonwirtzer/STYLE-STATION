@@ -59,7 +59,7 @@ if (isset($_SESSION['user']))
   <div dir="rtl" class="galery">
     <img src="img/alysa-bajenaru-88IV5AtWjB8-unsplash.jpg" style="border-top-right-radius:10px;">
     <img src="img/element5-digital-QJtyomGCYGw-unsplash.jpg">
-    <img src="imgistockphoto-1271712634-170667a.jpeg" style="border-bottom-right-radius:  10px;">
+    <img src="img/samuel-regan-asante-rHXI_D1yltA-unsplash.jpg" style="border-bottom-right-radius:  10px;">
   </div>
 
 
