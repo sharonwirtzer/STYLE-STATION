@@ -23,7 +23,7 @@ $user_id = $_SESSION['user_id'];
 
 $sql = "INSERT INTO orders (user_id, location, occupation, date, time, idcard) 
         VALUES ('$user_id', '$location', '$occupation', '$date', '$time', '$idcard')";
-        
+
 
 $conn->query($sql);
 

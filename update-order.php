@@ -60,7 +60,7 @@ if (isset($_SESSION['user']))
     <img src="img/alysa-bajenaru-88IV5AtWjB8-unsplash.jpg" style="border-top-right-radius:10px;">
     <img src="img/element5-digital-QJtyomGCYGw-unsplash.jpg">
     <img src="img/samuel-regan-asante-rHXI_D1yltA-unsplash.jpg" style="border-bottom-right-radius:  10px;">
-    
+
   </div>
 
 
@@ -85,8 +85,8 @@ if (isset($_SESSION['user']))
         </select>
       </div>
       <div>
-        <input type="date" name="date" id="date" required>
-        <input type="time" name="time" id="time" required>
+        <input id="date" name="date" type='date' min='1899-01-01' max='2000-13-13' required>
+        <input type="time" min="09:00" max="22:00" value="09:00" name="time" id="time" required>
       </div>
       <input type="text" value="<?php echo $orders->idcard ?>" name="idcard" id="idcard" readonly required>
       <div class="elem-group">

@@ -38,9 +38,7 @@ h3 {
   display: flex;
   margin: auto;
   border-radius: 50%;
-
 }
-
 
 .fa {
   padding: 5px;
@@ -201,6 +199,6 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.style{
+.style {
   font-size: 30px;
 }

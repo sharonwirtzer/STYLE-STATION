@@ -128,7 +128,7 @@ a:visited {
 table {
   background-color: rgba(var(--d87, 255, 255, 255), 1);
   border-radius: 10px;
-/*   margin-left: auto;
+  /*   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse; */
   text-transform: uppercase;
@@ -472,10 +472,10 @@ input[type="radio"] {
   margin-top: 20px;
 }
 
-.log{
-  background-color: #e7e8e3;;
+.log {
+  background-color: #e7e8e3;
 }
 
-.style{
+.style {
   font-size: 30px;
 }

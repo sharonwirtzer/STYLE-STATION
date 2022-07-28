@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="icon" type="image/png" href="img/pole.png" />
+    <link rel="icon" type="image/png" href="img/pole.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="error.css">
     <title>error page</title>
 </head>
+
 <body>
 
-<body class="bg-purple">
-        
+    <body class="bg-purple">
+
         <div class="stars">
             <div class="central-body">
                 <img class="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px">
-                <a href="index.php" class="btn-go-home" >GO BACK HOME</a>
+                <a href="index.php" class="btn-go-home">GO BACK HOME</a>
             </div>
             <div class="objects">
                 <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">
@@ -40,4 +42,5 @@
 
     </body>
 </body>
+
 </html>
