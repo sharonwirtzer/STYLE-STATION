@@ -57,9 +57,9 @@ if (isset($_SESSION['user']))
   </ul>
 
   <div dir="rtl" class="galery">
-    <img src="img/4.jpeg" style="border-top-right-radius:10px;">
-    <img src="img/8.jpeg">
-    <img src="img/istockphoto-1271712634-170667a.jpeg" style="border-bottom-right-radius:  10px;">
+    <img src="img/alysa-bajenaru-88IV5AtWjB8-unsplash.jpg" style="border-top-right-radius:10px;">
+    <img src="img/element5-digital-QJtyomGCYGw-unsplash.jpg">
+    <img src="imgistockphoto-1271712634-170667a.jpeg" style="border-bottom-right-radius:  10px;">
   </div>
 
 

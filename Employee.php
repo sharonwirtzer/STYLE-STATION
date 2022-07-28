@@ -39,10 +39,10 @@ if (isset($_SESSION['user']))
       echo "<p>Hello, $first_name | <a href='log-out.php' class='log-out'>Log Out</a></p>"; ?>
   </ul>
 
-  <div class="galery">
-    <img src="img/6.jpeg" style="border-top-right-radius:   10px;">
-    <img src="img/shutterstock_716104408-768x512.jpeg">
-    <img src="img/9.jpeg" style="border-bottom-right-radius:  10px;">
+  <div dir="rtl" class="galery">
+    <img src="img/4.jpeg" style="border-top-right-radius:10px;">
+    <img src="img/8.jpeg">
+    <img src="img/istockphoto-1271712634-170667a.jpeg" style="border-bottom-right-radius:  10px;">
   </div>
 
 
